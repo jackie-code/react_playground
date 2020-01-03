@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
-import { fraction, add, format } from 'math.js';
+import { fraction, add, format } from 'mathjs';
 import moment from 'moment';
+import Split from './composition/Split';
+
+function App() {
+  return (
+    <main className='App'>
+      <Split />
+    </main>
+  )
+}
 
 class App extends Component {
   render() {
@@ -31,6 +40,7 @@ class App extends Component {
         <h2>The date and time 7 days, 4 hours and 32 minutes from now is: </h2>
         <p>{formatted_later}</p>
         <h2>4/7 + 3/8 = </h2>
+        <p>Here we're adding two fractions:</p>
       <p>{formatted_fraction}</p>
       </div>
       
