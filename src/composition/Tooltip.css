@@ -20,7 +20,17 @@
     text-align: center;
     top: calc(-1.2em - 14px);
     white-space: nowrap;
+    /* start hidden */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
+
+  /* show on hover */
+.Tooltip:hover > .Tooltip-message {
+  opacity: 1;
+  visibility: visible;
+}
 
   /* triangle */
 .Tooltip-message:after {
